@@ -1,4 +1,4 @@
-package PRATICE.LEETCODE;
+package DSA.PRATICE.LEETCODE;
 
 import java.util.Arrays;
 

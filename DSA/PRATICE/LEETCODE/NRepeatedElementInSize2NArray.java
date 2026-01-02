@@ -1,4 +1,4 @@
-package PRATICE.LEETCODE;
+package DSA.PRATICE.LEETCODE;
 
 // problem url => https://leetcode.com/problems/n-repeated-element-in-size-2n-array/description/?envType=daily-question&envId=2026-01-02
 // problem name => N-Repeated Element in Size 2N Array (leetcode)
