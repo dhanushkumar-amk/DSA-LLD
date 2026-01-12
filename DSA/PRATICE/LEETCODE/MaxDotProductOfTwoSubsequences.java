@@ -59,6 +59,7 @@ public class MaxDotProductOfTwoSubsequences {
         // Store and return the maximum
         memo[i][j] = Math.max(take, Math.max(skip1, skip2));
         return memo[i][j];
+
     }
 }
 
