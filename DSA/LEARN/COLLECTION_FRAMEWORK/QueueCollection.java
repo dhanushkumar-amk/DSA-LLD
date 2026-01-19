@@ -46,5 +46,6 @@ public class QueueCollection {
         System.out.println(deque.peekLast());
         System.out.println(deque);
 
+
     }
 }
