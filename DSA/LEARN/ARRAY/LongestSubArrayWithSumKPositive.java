@@ -8,6 +8,7 @@ public class LongestSubArrayWithSumKPositive {
         System.out.println(ans);
     }
 
+    // optimal
     private static int longestSubarrayWithSumK(int[] arr, long k) {
         int left = 0;
         int right = 0;
