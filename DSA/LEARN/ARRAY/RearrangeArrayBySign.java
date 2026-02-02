@@ -9,6 +9,9 @@ public class RearrangeArrayBySign {
         System.out.println(Arrays.toString(ans));
     }
 
+    // efficient method
+
+
     // optimal code
     private static int[] reArrange1(int[] arr){
         int n = arr.length;
