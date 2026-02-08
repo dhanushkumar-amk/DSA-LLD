@@ -10,7 +10,9 @@ public class RearrangeArrayBySign {
     }
 
     // efficient method
-
+    private static void print(){
+        System.out.println("hello world");
+    }
 
     // optimal code
     private static int[] reArrange1(int[] arr){
