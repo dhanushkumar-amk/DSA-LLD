@@ -9,9 +9,7 @@ public class MergeOverlappingIntervals {
         int[][] intervals = {
                 {1, 3}, {2, 6}, {8, 10}, {15, 18}
         };
-
         List<List<Integer>> result = merge(intervals);
-
         for (List<Integer> interval : result) {
             System.out.print(
                     "[" + interval.get(0) + "," + interval.get(1) + "] "
