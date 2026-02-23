@@ -23,8 +23,7 @@ public class MinimumInRotatedSortedArray {
     }
 
     private static int minimum2(int[] arr){
-
-
+        int minimum = 0;
         return -1;
     }
 
