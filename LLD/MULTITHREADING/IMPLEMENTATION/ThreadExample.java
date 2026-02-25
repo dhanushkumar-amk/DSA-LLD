@@ -1,4 +1,4 @@
-package LLD.MULTITHREADING;
+package LLD.MULTITHREADING.IMPLEMENTATION;
 
 public class ThreadExample extends Thread{
 

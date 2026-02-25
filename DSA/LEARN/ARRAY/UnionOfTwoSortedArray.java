@@ -1,9 +1,6 @@
 package DSA.LEARN.ARRAY;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class UnionOfTwoSortedArray {
     public static void main(String[] args) {
@@ -13,7 +10,7 @@ public class UnionOfTwoSortedArray {
         int[] ans = unionArray(arr1, arr2);
         System.out.println(Arrays.toString(ans));
 
-        ArrayList<Integer> list = union(arr1, arr2);
+        ArrayList<Integer> list = union2(arr1, arr2);
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i) + " ");
         }
@@ -40,6 +37,19 @@ public class UnionOfTwoSortedArray {
         }
         return temp;
     }
+
+    // better solution
+    private static ArrayList<Integer> union2(int[] arr1, int[] arr2){
+        Set<Integer> set = new TreeSet<>();
+        for (int num : arr1) {
+            set.add(num);
+        }
+        for (int num : arr2) {
+            set.add(num);
+        }
+        return new ArrayList<>(set);
+    }
+
 
     // optimal Approach
     private static ArrayList<Integer> union(int[] arr1, int[] arr2){
