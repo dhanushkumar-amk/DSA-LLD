@@ -7,7 +7,7 @@ public class InsertionAndDeletion {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5};
         Node head = convertArrayToLL(arr);
-        head = insertLast(head, 11);
+        head = insertPosition(head, 11, 3);
         printLL(head);
     }
 
@@ -131,8 +131,21 @@ public class InsertionAndDeletion {
         }
 
         if (position == 1){
-            Node temp = new Node(value, head);
-            return temp;
+            return new Node(value, head);
+        }
+
+        int count = 0;
+        Node temp = head;
+
+        while (temp != null){
+            count++;
+            if (count == (position - 1)){
+                Node newNode = new Node(value);
+                newNode.next = temp.next;
+                temp.next = newNode;
+                break;
+            }
+            temp = temp.next;
         }
         return head;
     }
