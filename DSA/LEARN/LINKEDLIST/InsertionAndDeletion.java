@@ -96,13 +96,13 @@ public class InsertionAndDeletion {
 
     // insert element on first
     public static Node insertFirst(Node head, int value){
-//        Node temp = head;
-//        Node newNode = new Node(value);
-//
-//        newNode.next = temp;
-//        head = newNode;
-//
-//        return head;
+    //        Node temp = head;
+    //        Node newNode = new Node(value);
+    //
+    //        newNode.next = temp;
+    //        head = newNode;
+    //
+    //        return head;
 
         return new Node(value, head);
     }
