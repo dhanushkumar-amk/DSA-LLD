@@ -6,8 +6,8 @@ public class DLL {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6,7,8};
           DNode head = convertArrayToDLL(arr);
-//          head = deleteKthElement(head, 5);
-        deleteNode(head.next);
+          head = insertTail(head, 5);
+//        deleteNode(head.next);
           printDLL(head);
     }
 
@@ -113,5 +113,36 @@ public class DLL {
         temp.next = null;
         temp.prev = null;
     }
+
+
+    // insert the head (before)
+    public static DNode insertHead(DNode head, int value){
+        DNode newNode = new DNode(value, null, head);
+        head.prev = newNode;
+        head = newNode;
+
+        return head;
+    }
+
+    // insert the tail (before)
+    public static DNode insertTail(DNode head, int value){
+        if (head.next == null)
+            return insertHead(head, value);
+
+        DNode tail = head;
+
+        while (tail.next != null) {
+            tail = tail.next;
+        }
+
+        DNode previous = tail.prev;
+        DNode newNode = new DNode(value, previous, tail);
+
+        previous.next = newNode;
+        tail.prev = newNode;
+
+        return head;
+    }
+
 }
 
