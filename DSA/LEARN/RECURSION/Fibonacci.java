@@ -9,9 +9,10 @@ public class Fibonacci {
         if (n <= 1)
             return n;
 
-        int last = fibo(n - 1);
-        int secondLast = fibo(n - 2);
+//        int last = fibo(n - 1);
+//        int secondLast = fibo(n - 2);
 
-        return last + secondLast;
+//        return last + secondLast;
+        return fibo(n - 1) + fibo(n - 2);
     }
 }
