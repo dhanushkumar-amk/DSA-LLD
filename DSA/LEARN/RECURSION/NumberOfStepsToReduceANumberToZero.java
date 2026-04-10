@@ -6,11 +6,6 @@ public class NumberOfStepsToReduceANumberToZero {
         System.out.println(count(n, 0));
     }
 
-
-
-
-
-
     private static int count(int n, int step){
         if (n == 0)
             return step;
