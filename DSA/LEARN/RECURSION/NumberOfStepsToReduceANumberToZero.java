@@ -10,9 +10,9 @@ public class NumberOfStepsToReduceANumberToZero {
         if (n == 0)
             return step;
 
-        if (n % 2 == 0)
+        if (n % 2 == 0) {
             return count(n / 2, step + 1);
-
+        }
         return count(n - 1, step + 1);
     }
 }
