@@ -1,16 +1,16 @@
 package DSA.LEARN.RECURSION;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashSet;
 
 public class Permutations {
     public static void main(String[] args) {
         String str = "abcde";
-        permutations("", str);
+//        permutations("", str);
+  int result = permutationsCount("", "abc", 0);
+System.out.println(result);
     }
 
-    private static void permutations(String process, String unProcess){
+    private static  void permutations(String process, String unProcess){
         if (unProcess.isEmpty()){
             System.out.print(process + " ");
             return;
@@ -27,13 +27,9 @@ public class Permutations {
         }
     }
 
-    public ArrayList<String> findPermutation(String s) {
-        ArrayList<String> list = helper("", s);
 
-        list = removeDuplicates(list);      // remove duplicates
-        list = sortLexicographically(list); // sort result
-
-        return list;
+     public ArrayList<String> findPermutation(String s) {
+        return helper("", s);
     }
 
     private static ArrayList<String> helper(String process, String unProcess){
@@ -45,7 +41,8 @@ public class Permutations {
         }
 
         ArrayList<String> ans = new ArrayList<>();
-        char firstCharacter = unProcess.charAt(0);
+
+         char firstCharacter = unProcess.charAt(0);
 
         for (int i = 0; i <= process.length() ; i++) {
 
@@ -58,14 +55,22 @@ public class Permutations {
         return ans;
     }
 
-    // Function 1: Remove duplicates
-    private ArrayList<String> removeDuplicates(ArrayList<String> list) {
-        return new ArrayList<>(new LinkedHashSet<>(list));
+    // permutation count
+    private static  int permutationsCount(String process, String unProcess, int count){
+        if (unProcess.isEmpty()){
+            return count + 1;
+        }
+
+        char firstCharacter = unProcess.charAt(0);
+
+        for (int i = 0; i <= process.length() ; i++) {
+
+            String first = process.substring(0, i);
+            String second = process.substring(i);
+
+           count =  permutationsCount(first + firstCharacter + second, unProcess.substring(1), count);
+        }
+        return count;
     }
 
-    // Function 2: Sort lexicographically
-    private ArrayList<String> sortLexicographically(ArrayList<String> list) {
-        Collections.sort(list);
-        return list;
-    }
 }
