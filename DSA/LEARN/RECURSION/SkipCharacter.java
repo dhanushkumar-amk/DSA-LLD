@@ -35,8 +35,10 @@ public class SkipCharacter {
 
         // skip the character
         if (firstCharacter == 'a'){
+            // not pick
             return skip2(string.substring(1));
         }else{
+            // pick
            return firstCharacter + skip2( string.substring(1));
         }
     }
