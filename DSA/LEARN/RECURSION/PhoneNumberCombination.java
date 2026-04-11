@@ -18,7 +18,6 @@ public class PhoneNumberCombination {
 
         for (int i = (digit - 1) * 3; i < digit * 3 ; i++) {
             char characterToAdd  = (char) ('a' + i);
-
             printPhoneCombination(processed + characterToAdd, unprocessed.substring(1));
         }
     }
