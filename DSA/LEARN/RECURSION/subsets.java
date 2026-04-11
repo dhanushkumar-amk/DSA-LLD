@@ -6,6 +6,11 @@ public class subsets {
     public static void main(String[] args) {
         String str = "abc";
         subset(" ", str);
+
+        System.out.println();
+
+        ArrayList<String> ans = subsets1(" ", str);
+        System.out.println(ans);
     }
 
     // no return type
