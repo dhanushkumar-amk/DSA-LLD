@@ -1,17 +1,15 @@
 package DSA.LEARN.TREES;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BFS {
-
-     public class Node {
+public class LevelOrderTraversal2 {
+        public class Node {
          int value;
         int height;
-      Node left;
-      Node right;
+    Node left;
+   Node right;
 
         public Node(int value) {
             this.value = value;
@@ -39,7 +37,7 @@ public class BFS {
             ArrayList<Integer> currentLevelList = new ArrayList<>();
 
              for (int i = 0; i < size; i++) {
-                 Node currentNode = queue.poll();
+               Node currentNode = queue.poll();
                  currentLevelList.add(currentNode.value);
 
                  if (currentNode.left != null)
@@ -50,8 +48,8 @@ public class BFS {
              }
 
 
-             ans.add(currentLevelList);
+             ans.add(0, currentLevelList);
          }
             return ans;
     }
-}
+    }
