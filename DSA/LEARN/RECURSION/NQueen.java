@@ -56,9 +56,9 @@ public class NQueen {
         for(boolean [] row : board){
             for(boolean element : row){
                 if (element){
-                    System.out.print("Q ");
+                    System.out.print("✅ ");
                 }else{
-                    System.out.print("X ");
+                    System.out.print("❌ ");
                 }
             }
             System.out.println();
