@@ -34,6 +34,7 @@ public class NumberOfProvinces {
                  dfs(i, visited, list);
              }
          }
+         return count;
     }
 
     private static void dfs(int node, boolean[] visited, ArrayList<ArrayList<Integer>> list) {
