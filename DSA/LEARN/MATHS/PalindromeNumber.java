@@ -23,4 +23,18 @@ public class PalindromeNumber {
         }
         return ans;
     }
+
+     public boolean isPalindrome1(int x) {
+        int temp = Math.abs(x);
+        int sum = 0;
+
+        while (x > 0){
+            int lastDigit = x % 10;
+            sum = sum * 10 + lastDigit;
+            x = x / 10;
+        }
+        if (sum == temp)
+            return true;
+        else return false;
+    }
 }
