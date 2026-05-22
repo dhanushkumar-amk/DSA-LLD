@@ -11,6 +11,11 @@ class SwapNodesInPairs {
   }
   
     public ListNode swapPairs(ListNode head) {
+
+      // Base case: If the list is empty or has only one node, return the head as is
+       if (head == null || head.next == null)
+           return head;
+      
         // create a dummy node
       ListNode dummy = new ListNode(0);
       dummy.next = head;
@@ -22,9 +27,10 @@ class SwapNodesInPairs {
           ListNode first = current.next;
           ListNode second = current.next.next;
 
-         first.next = second.next;
+        first.next = second.next;
         second.next = first;
 
+        // Now move the current pointer to the first node of the next pair
         current.next = second;
         current = first;
       }
