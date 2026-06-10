@@ -24,3 +24,5 @@ public class MinimumOperationsToMakeBinaryArrayElementsEqualToOneI {
         return -1;
     }
 }
+
+
