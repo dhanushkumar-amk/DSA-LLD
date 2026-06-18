@@ -1,4 +1,4 @@
-
+package DSA.PRATICE.LEETCODE;
 
 class SwapNodesInPairs {
 
