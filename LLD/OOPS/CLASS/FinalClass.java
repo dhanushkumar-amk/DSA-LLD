@@ -1,6 +1,6 @@
-package LLD.OOPS;
+package LLD.OOPS.CLASS;
 
-public class FinalClass {
+public  class FinalClass {
     final static int INCREASE = 10;
 
     public static void main(String[] args) {
