@@ -15,8 +15,14 @@ public class Main
 //        System.out.println(box2.height);
 
 
-        BoxWeight box3 = new BoxWeight(1,2,3,4
+//        BoxWeight box3 = new BoxWeight(1,2,3,4
+//        );
+//        System.out.println(box3.length + " " + box3.width + " " + box3.height + " " + box3.weight);
+//
+//
+        BoxPrice box = new BoxPrice(1,2,3,4,5);
+        System.out.println(box.cost);
+        System.out.println(box.height
         );
-        System.out.println(box3.length + " " + box3.width + " " + box3.height + " " + box3.weight);
     }
 }
