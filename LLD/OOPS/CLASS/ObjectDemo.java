@@ -46,5 +46,10 @@ public class ObjectDemo {
             System.out.println(true);
         else
             System.out.println(false);
+
+
+        System.out.println(obj1 instanceof  Object); // check it is sub class or not
+
+        System.out.println(obj1.getClass());
     }
 }
