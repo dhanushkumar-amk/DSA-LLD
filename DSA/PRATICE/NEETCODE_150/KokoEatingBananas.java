@@ -3,10 +3,6 @@ package DSA.PRATICE.NEETCODE_150;
 import java.util.Arrays;
 
 public class KokoEatingBananas {
-    public static void main(String[] args) {
-
-    }
-
     public static int minEatingSpeed(int[] arr, int hour) {
          int low = 1;
         int high = Arrays.stream(arr).max().getAsInt();
@@ -28,7 +24,6 @@ public class KokoEatingBananas {
     }
 
     private static long findTotalHoursWouldTakenByKoko(int[] arr, int mid) {
-
         long totalHour = 0;
 
         for (int i = 0; i < arr.length; i++) {
