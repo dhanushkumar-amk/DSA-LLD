@@ -12,8 +12,8 @@ public class Main {
 //        System.out.println(Human.population);
 //        System.out.println(raj.population);
 
-//        Main main = new Main();
-//        main.greeting();
+//        Main Main = new Main();
+//        Main.greeting();
 
 
         Human human1 = new Human(21, "dhanushkumar", 100000, false);

@@ -59,7 +59,7 @@ public class StackImplementUsingLL {
         System.out.println("null");
     }
 
-    // psvm (main method)
+    // psvm (Main method)
     public static void main(String[] args) {
         StackImplementUsingLL stack = new StackImplementUsingLL();
 
