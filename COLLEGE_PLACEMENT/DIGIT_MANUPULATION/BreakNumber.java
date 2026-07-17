@@ -19,6 +19,9 @@ public class BreakNumber {
 
 
         System.out.println(product(12345));
+        
+        
+
     }
 
 
@@ -75,4 +78,5 @@ public class BreakNumber {
         }
         return product;
     }
+
 }
