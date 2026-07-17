@@ -16,6 +16,9 @@ public class BreakNumber {
         System.out.println(sum(n));
 
         System.out.println(countDigit(n));
+
+
+        System.out.println(product(12345));
     }
 
 
@@ -60,5 +63,16 @@ public class BreakNumber {
             count++;
         }
         return count;
+    }
+
+    // product of an digit
+      public static int product(int n){
+        int product = 1;
+        while (n > 0){
+            int remainer = n % 10;;
+            product *= remainer;
+            n /= 10;
+        }
+        return product;
     }
 }
