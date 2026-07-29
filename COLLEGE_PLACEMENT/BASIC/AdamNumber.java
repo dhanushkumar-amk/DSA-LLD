@@ -1,5 +1,7 @@
 package COLLEGE_PLACEMENT.BASIC;
 
+// https://www.geeksforgeeks.org/problems/adam-number2650/1
+
 public class AdamNumber {
 
     public static void main(String[] args) {
@@ -19,14 +21,13 @@ public class AdamNumber {
 
         // square of the orginal value 12 * 12 => 144
         int squareOfN = square(n);
-
         // Reverse the square of the orginal number 144 => 441
         int reverseOfSquareOfN = reverse(squareOfN);
 
         // Square the reversed number 21 * 21 => 441
         int squareOfReverse = square(reverseOfN);
 
-        return reverseOfSquareOfN == squareOfReverse;
+        return reverseOfSquareOfN == squareOfReverse; // 441 == 441 true
     }
 
     //square function
@@ -36,12 +37,12 @@ public class AdamNumber {
 
     // revverse function
     public static int reverse(int n) {
-        int reverse = 0;
+        int sum = 0;
         while (n > 0) {
             int remainder = n % 10;
-            reverse = reverse * 10 + remainder;
+            sum = sum * 10 + remainder;
             n = n / 10;
         }
-        return reverse;
+        return sum;
     }
 }
