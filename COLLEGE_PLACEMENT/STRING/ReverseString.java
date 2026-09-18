@@ -14,6 +14,7 @@ public class ReverseString {
         int right = charArray.length - 1;
 
         while (left <= right)
+
         {
 
             char temp = charArray[left];
