@@ -35,7 +35,7 @@ public class RemovePalindromeWords {
 
 
      private static boolean isPalindrome(String str){
-        int left =0;
+        int left = 0;
         int right = str.length() - 1;
 
 
