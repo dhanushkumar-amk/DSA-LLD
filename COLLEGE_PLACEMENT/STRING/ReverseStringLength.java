@@ -11,17 +11,16 @@ public class ReverseStringLength {
 
 
         String[] words = input.split(" ");
+        StringBuilder allChars = new StringBuilder();
 
-         StringBuilder allChars = new StringBuilder();
+        for(String word : words)
+            allChars.append(word);
 
-         for(String word : words)
-             allChars.append(word);
+        allChars.reverse();
 
-            allChars.reverse();
+        StringBuilder ans = new StringBuilder();
 
-         StringBuilder ans = new StringBuilder();
-
-         int index= 0;
+        int index= 0;
 
         for (int i = 0; i < words.length; i++) {
             String currentWord = words[i];
