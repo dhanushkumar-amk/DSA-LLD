@@ -1,4 +1,4 @@
-package DSA.LEETCODE.GREEDY;
+package DSA.LEETCODE;
 
 import java.util.HashMap;
 

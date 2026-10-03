@@ -1,4 +1,4 @@
-package DSA.LEETCODE.MATH;
+package DSA.LEETCODE;
 
 // https://leetcode.com/problems/water-bottles/
 

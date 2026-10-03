@@ -1,4 +1,4 @@
-package DSA.LEETCODE.GREEDY;
+package DSA.LEETCODE;
 
 public class MinimumTimeVisitingAllPoints {
 

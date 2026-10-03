@@ -1,4 +1,4 @@
-package DSA.LEETCODE.STACK;
+package DSA.LEETCODE;
 
 import java.util.ArrayList;
 import java.util.List;
