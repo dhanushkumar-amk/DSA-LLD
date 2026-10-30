@@ -1,5 +1,8 @@
 package DSA.LEETCODE;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class IntegerToRoman {
     public String intToRoman(int num) {
         LinkedHashMap<Integer, String> map = new LinkedHashMap<>();
